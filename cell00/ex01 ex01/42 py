@@ -1,0 +1,2 @@
+print(42)
+python3 42.py | cat -e
