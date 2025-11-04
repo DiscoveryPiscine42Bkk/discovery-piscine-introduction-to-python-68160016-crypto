@@ -1,0 +1,20 @@
+import sys
+def shrink(s):
+    print(s[:8])
+
+def enlarge(s):
+    print(s + 'Z' * (8 - len(s)))
+if len(sys.argv) < 2:
+    print("none")
+else:
+    for arg in sys.argv[1:]:
+        if len(arg) > 8:
+            shrink(arg)
+        elif len(arg) < 8:
+            enlarge(arg)
+        else:
+            print(arg)
+C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py lol physically backpack 
+lolZZZZZ
+physical
+backpack
