@@ -5,12 +5,11 @@ else:
     try:
         start = int(sys.argv[1])
         end = int(sys.argv[2])
-        result = list(range(start, end + 1))
-        print(result)
+        numbers = list(range(start, end + 1))
+        print(numbers)
     except ValueError:
         print("none")
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/ex14/free_range.py
+ไม่กรอก C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py parallel egoism human 
 none
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/ex14/free_range.py 10 14
+กรอก 10 กับ 14 C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py 10 14 
 [10, 11, 12, 13, 14]
-PS C:\Users\user\.vscode>
