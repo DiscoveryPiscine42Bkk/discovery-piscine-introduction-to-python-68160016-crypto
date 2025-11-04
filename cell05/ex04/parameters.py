@@ -10,3 +10,4 @@ Number of parameters: 1.
 PS C:\Users\user\.vscode\ex04> python parameters.py this is crazy "there's everywhere!"
 Number of parameters: 5.
 PS C:\Users\user\.vscode>
+ใน VS Code เราไม่กรอกค่าภายในตัวไฟล์ แต่ต้อง “ใส่ค่าพารามิเตอร์ด้านนอก” ตอนรันโปรแกรม เช่นใน Terminal ด้านล่างของ VS Code
