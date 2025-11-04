@@ -3,14 +3,12 @@ if len(sys.argv) != 2:
     print("none")
 else:
     print(sys.argv[1].upper())
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/upcase_it.py
+ไม่มีพารามิเตอร์ C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py 
 none
-PS C:\Users\user\.vscode>
-
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/upcase_it.py "initiation"
+กรอก initiation 
+C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py initiation 
 INITIATION
-PS C:\Users\user\.vscode>
 
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/upcase_it.py "This exercise is quite easy!"
+กรอก This exercise is quite easy!
+ได้ผล C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py  This exercise is quite easy!
 THIS EXERCISE IS QUITE EASY!
-PS C:\Users\user\.vscode>
