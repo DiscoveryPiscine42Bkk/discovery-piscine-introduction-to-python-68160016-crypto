@@ -1,18 +1,20 @@
 import sys
-if len(sys.argv) != 3:
+args = sys.argv[1:]
+if len(args) != 2:
     print("none")
 else:
-    keyword = sys.argv[1]
-    text = sys.argv[2]
-    if keyword not in text:
+    keyword = args[0]
+    text = args[1]
+    count = text.count(keyword)
+    if count == 0:
         print("none")
     else:
-        count = text.count(keyword)
         print(count)
-PS C:\Users\user\.vscode\ex09> & C:/Users/user/.vscode/.venv/Scripts/python.exe .\scan_it.py | cat -e
-none$
-PS C:\Users\user\.vscode\ex09> & C:/Users/user/.vscode/.venv/Scripts/python.exe .\scan_it.py "the" | cat -e
-none$
-PS C:\Users\user\.vscode\ex09> & C:/Users/user/.vscode/.venv/Scripts/python.exe .\scan_it.py "the" "the quick brown fox jumps over the lazy dog" | cat -e
-2$
-PS C:\Users\user\.vscode\ex09>
+    ไม่กรอกอะไร  C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py Python piscine hello 
+none
+กรอก the 
+C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py the 
+none
+กรอก the "the quick brown fox jumps over the lazy dog"
+C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py the "the quick brown fox jumps over the lazy dog" 
+2
