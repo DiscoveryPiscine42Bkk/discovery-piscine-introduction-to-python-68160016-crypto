@@ -1,13 +1,15 @@
 import sys
-if len(sys.argv) == 1:
+if len(sys.argv) < 2:
     print("none")
 else:
-    for word in sys.argv[1:]:
-        if not word.endswith("ism"):
-            print(f"{word}ism")
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/append_it.py
-none
-PS C:\Users\user\.vscode> & C:/Users/user/.vscode/.venv/Scripts/python.exe c:/Users/user/.vscode/append_it.py "parallel" "egoism" "human"
+    has_output = False  
+    for arg in sys.argv[1:]:
+        if not arg.endswith("ism"): 
+            print(arg + "ism")
+            has_output = True
+    if not has_output:
+        print("none")
+กรอก parallel egoism human
+C:\Users\user\PyCharmMiscProject\.venv\Scripts\python.exe C:\Users\user\PyCharmMiscProject\parameter.py parallel egoism human 
 parallelism
 humanism
-PS C:\Users\user\.vscode>
