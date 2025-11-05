@@ -8,16 +8,15 @@ def main():
 ....\
 """
     print("Test 1 (King โดนโจมตี):")
-    checkmate(chess_board_success)  # ใช้ฟังก์ชัน checkmate
-
+    checkmate(chess_board_success)  
     print("\nTest 2 (King ปลอดภัย):")
     chess_board_fail = """\
-....
+R...
 ....
 ..K.
 ....\
 """
-    checkmate(chess_board_fail)  # ใช้ฟังก์ชัน checkmate
+    checkmate(chess_board_fail)  
 
 if __name__ == "__main__":
     main()
