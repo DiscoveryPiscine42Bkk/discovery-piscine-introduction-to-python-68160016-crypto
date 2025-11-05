@@ -33,6 +33,13 @@ def checkmate(board_str):
                             return
                         if board[x][y] != '.':
                             break
+                        if piece == 'P':
+    for dx, dy in [(-1,-1), (-1,1)]:
+        x, y = i + dx, j + dy
+        if 0 <= x < size and 0 <= y < size and (x, y) == (king_x, king_y):
+            print("Success")
+            return
+
 
     print("Fail")
 
