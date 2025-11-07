@@ -17,7 +17,7 @@ def checkmate(board_str):
             # Rook ตรวจแนวตั้ง-แนวนอน
             if piece == 'R':
                 for dx, dy in [(-1,0),(1,0),(0,-1),(0,1)]:
-                    x, y = i  # ❌ Error: ลืมใส่ j
+                    x, y = i, j
                     while 0 <= x+dx < size and 0 <= y+dy < size:
                         x += dx
                         y += dy
@@ -26,5 +26,26 @@ def checkmate(board_str):
                             return
                         if board[x][y] != '.':
                             break
+
+            # Bishop ตรวจแนวทแยง
+            if piece == 'B':
+                for dx, dy in [(-1,-1), (-1,1), (1,-1), (1,1)]:
+                    x, y = i, j
+                    while 0 <= x+dx < size and 0 <= y+dy < size:
+                        x += dx
+                        y += dy
+                        if (x, y) == (king_x, king_y):
+                            print("Success")
+                            return
+                        if board[x][y] != '.':
+                            break
+
+            # Pawn ตรวจโจมตีเฉียงขึ้น
+            if piece == 'P':
+                for dx, dy in [(-1,-1), (-1,1)]:
+                    x, y = i + dx, j + dy
+                    if 0 <= x < size and 0 <= y < size and (x, y) == (king_x, king_y):
+                        print("Success")
+                        return
 
     print("Fail")
